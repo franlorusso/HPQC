@@ -32,3 +32,12 @@ Varying ping counts: 10, 100, 1,000, 10,000.
 Created pingpong_bw.c, which transmits a buffer of size 8B to 2MiB back and forth.
 Used malloc() to create dynamic buffers.
 Measured total time for N round trips, calculated bandwidth.
+
+Overall, MPI_Scatter() is the fastest (no needless duplication).
+For chunk-wise processing, MPI_Bcast() performs better than manual but less well than Scatter.
+The prediction was true: Scatter distributes chunked data more effectively.
+Final Analysis:
+Discovered differences and internal behaviour of different MPI send kinds.
+Developed knowledge of the experimental measurement of latency and bandwidth.
+discovered that large-scale repetitions are necessary to stabilise findings while timing noise in MPI.
+Found that group communication practices are more efficient and manageable than send/receive loops.
