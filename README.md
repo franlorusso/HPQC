@@ -36,6 +36,7 @@ Measured total time for N round trips, calculated bandwidth.
 Overall, MPI_Scatter() is the fastest (no needless duplication).
 For chunk-wise processing, MPI_Bcast() performs better than manual but less well than Scatter.
 The prediction was true: Scatter distributes chunked data more effectively.
+
 Final Analysis:
 Discovered differences and internal behaviour of different MPI send kinds.
 Developed knowledge of the experimental measurement of latency and bandwidth.
