@@ -1,0 +1,20 @@
+Measurement result:
+100110
+Measurement result:
+101111
+Measurement result:
+011011
+Measurement result:
+110111
+Measurement result:
+000011
+Measurement result:
+110100
+Measurement result:
+010000
+Measurement result:
+101100
+Measurement result:
+010011
+Measurement result:
+111111
